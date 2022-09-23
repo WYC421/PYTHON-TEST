@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>高校投票首页</title>
+		<link rel="stylesheet" href="../static/css/投票项目style.css" th:href = "@{../css/投票项目style.css}">
+	</head>
+	<body>
+		<div class="header w">
+			<div class="logo">
+				<img src="img/logowode.png" th:src="@{../img/logowode.png}" alt="">
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="index.html" th:href="@{index}">网站首页</a></li>
+					<li><a href="#" th:href="@{关于我们}">关于我们</a></li>
+					<li><a href="#" th:href="@{Project}">项目创建</a></li>
+					<li><a href="#" th:href="@{information}">个人中心</a></li>
+					<li><a href="#" th:href="@{login}">登录</a></li>
+					<li><a href="#" th:href="@{register}">注册</a></li>
+				</ul>
+			</div>
+		</div> 
+		<div class="header1 w">
+			<div class="logo1">
+				<img src="img/wodelogo2.png" th:src="@{../img/wodelogo2.png}" alt="">
+			</div>
+			<div class="logo2">
+				<img src="img/logo3.png" th:src="@{../img/logo3.png}" alt="">
+			</div>
+		</div>
+		<div class="goods w">
+			<a href="index.html" class="shouye">首页</a>
+			<ul>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="投票项目.html">投票项目</a></li>
+				<li><a href="#">资讯信息</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">个人中心</a></li>
+				<li><a href="#">项目创建</a></li>
+			</ul>
+		</div>
+		<div class="banner">
+			<div class="w">
+				<img src="img/logo4.png" th:src="@{../img/logo4.png}" alt="">
+			</div>
+		</div>
+		<div class="box1 w">
+			<a href="#" class="xiangmuleixin">项目类型</a>
+			<ul>
+				<li><a href="#">当前位置</a></li>
+				<li><a href="关于生活.html">关于生活</a></li>
+			</ul>
+		</div>
+		<div class="foot">
+			<div class="w">
+				<div class="lift">
+					<ul>
+						<li><a href="投票项目.html">关于学习</a></li>
+						<li><a href="关于住宿.html" th:href="@{关于住宿}">关于住宿</a></li>
+						<li><a href="关于食堂.html" th:href="@{关于食堂}">关于食堂</a></li>
+						<li><a href="关于生活.html" th:href="@{关于生活}">关于生活</a></li>
+						<li><a href="其他投票.html" th:href="@{其他投票}">其他投票</a></li>
+					</ul>
+				</div>
+				<div class="boxes">
+					<div class="boxes-bd">
+						<ul class="clearfix">
+							<li>
+								<img src="img/lanzhou.png" th:src="@{../img/lanzhou.png}" alt="">
+								<ul>
+									<li><a href="#">投票项目10</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+		

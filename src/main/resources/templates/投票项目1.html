@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>高校投票首页</title>
+		<link rel="stylesheet" href="../static/css/项目信息.css" th:href = "@{../css/项目信息.css}">
+	</head>
+	<body>
+		<div class="header w">
+			<div class="logo">
+				<img src="img/logowode.png" th:src="@{../img/logowode.png}" alt="">
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">网站首页</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="投票项目.html">投票项目</a></li>
+					<li><a href="#">个人中心</a></li>
+					<li><a href="#">登录</a></li>
+					<li><a href="#">注册</a></li>
+				</ul>
+			</div>
+		</div> 
+		<div class="header1 w">
+			<div class="logo1">
+				<img src="img/wodelogo2.png" th:src="@{../img/wodelogo2.png}" alt="">
+			</div>
+			<div class="logo2">
+				<img src="img/logo3.png" th:src="@{../img/logo3.png}"alt="">
+			</div>
+		</div>
+		<div class="goods w">
+			<a href="index.html" class="shouye">首页</a>
+			<ul>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="投票项目.html">投票项目</a></li>
+				<li><a href="#">资讯信息</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">个人中心</a></li>
+				<li><a href="#">项目创建</a></li>
+			</ul>
+		</div>
+		<div class="banner">
+			<div class="w">
+				<img src="img/logo4.png" th:src="@{../img/logo4.png}" alt="">
+			</div>
+		</div>
+		<div class="box1 w">
+			<a href="#" class="xiangmuleixin">项目类型</a>
+			<ul>
+				<li><a href="#">当前位置</a></li>
+				<li><a href="投票项目1">项目信息</a></li>
+			</ul>
+		</div>
+		<div class="foot">
+			<div class="w">
+				<div class="lift">
+					<ul>
+						<li><a href="投票项目.html">关于学习</a></li>
+						<li><a href="关于住宿.html" th:href="@{关于住宿}">关于住宿</a></li>
+						<li><a href="关于食堂.html" th:href="@{关于食堂}">关于食堂</a></li>
+						<li><a href="关于生活.html" th:href="@{关于生活}">关于生活</a></li>
+						<li><a href="其他投票.html" th:href="@{其他投票}">其他投票</a></li>
+					</ul>
+				</div>
+				<div class="boxes">
+					<div class="fukk1">
+						<img src="img/lanzhou.png" th:src="@{../img/lanzhou.png}" alt="">
+					</div>
+					<div class="fukk2">
+					<h2>投票项目1</h2>
+					<h4>时间：2021-11-12 15:22:44</h4>
+					<h4>类型：关于学习</h4>
+					<h4>标签：学习</h4>
+					<h4>备注：投票项目1</h4>
+					<h4>说明：投票项目1</h4>
+					<h4>特色：投票项目1</h4>
+					<h4>总投：投票项目1</h4>
+					</div>
+					<div class="fukk3">
+						<td style="padding-bottom: 200px;">
+						<input type="button"  value="确认投票" style="width:80px;height:40px" onclick="fun()">
+						</td>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+	function fun() {
+		alert('投票成功');
+	}
+	</script>
+</html>
+		

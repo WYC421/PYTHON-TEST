@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.UserInfoMapper">
+
+    <select id="getAllUser" resultType="com.entity.UserInfo">
+        select no, name, pwd, age, sex, phone, role
+        from userinfo
+    </select>
+
+    <insert id="register" parameterType="com.entity.UserInfo">
+        insert into userinfo(no,name,pwd,age,sex,phone,role)
+        values (#{no},#{name},#{pwd},#{age},#{sex},#{phone},#{role})
+    </insert>
+
+    <!--Integer UserDelect(UserInfo userInfo);-->
+    <delete id="UserDelect">
+        delete from userinfo where no=#{no}
+    </delete>
+
+    <!--Integer UserUpdate(UserInfo userInfo);-->
+    <update id="UserUpdate">
+        update userinfo set name=#{name},pwd=#{pwd},age=#{age},sex=#{sex},phone=#{phone},role=#{role} where no=#{no}
+    </update>
+</mapper>
+

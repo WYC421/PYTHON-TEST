@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" xmlns th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>北京大学</title>
+    <style>
+        .box {
+            font: normal 11px verdana;
+            float: left;
+            position: relative;
+        }
+
+        .box ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 150px;
+            border-bottom: 1px solid greenyellow;
+        }
+
+        .box ul li {
+            position: relative;
+        }
+
+        .box li ul {
+            position: absolute;
+            left: 150px;
+            top: 0;
+            display: none;
+        }
+        .box ul li a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            background: skyblue;
+            padding: 25px;
+            border: 1px solid grey;
+            border-bottom: 0;
+        }
+
+        .box ul li a:hover {
+            color: grey;
+            background: skyblue;
+        }
+
+        .box li ul li a {
+            padding: 7px 5px;
+        }
+
+        .box li:hover ul, li.over ul {
+            display: block;
+        }
+        img{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div style="width: 100%;height: 750px;background-color: blanchedalmond;position: fixed">
+    <div class="box">
+        <ul id="nav1">
+            <li><a href="#">十大名校</a></li>
+            <li><a href="#">清华大学</a>
+                <ul>
+                    <li><a href="清华大学.html">学校概况</a></li>
+                    <li><a href="">学校新闻</a></li>
+                </ul>
+            </li>
+            <li><a href="#">北京大学</a>
+                <ul>
+                    <li><a href="北京大学.html">学校概况</a></li>
+                    <li><a href="#">学校新闻</a></li>
+                </ul>
+            </li>
+            <li><a href="#">浙江大学</a>
+                <ul>
+                    <li><a href="浙江大学.html">学校概况</a></li>
+                    <li><a href="#">学校新闻</a></li>
+                </ul>
+            </li>
+            <li><a href="#">上海交通大学</a>
+                <ul>
+                    <li><a href="上海交通大学.html">学校概况</a></li>
+                    <li><a href="#">学校新闻</a></li>
+                </ul>
+            </li>
+            <li><a href="">南京大学</a>
+                <ul>
+                    <li><a href="南京大学.html">学校概况</a></li>
+                    <li><a href="">学校新闻</a></li>
+                </ul>
+            </li>
+            <li><a href="">复旦大学</a>
+                <ul>
+                    <li><a href="复旦大学.html">学校概况</a></li>
+                    <li><a href="">学校新闻</a></li>
+                </ul>
+            </li>
+            <li><a href="">中国科学技术大学</a>
+                <ul>
+                    <li><a href="中国科学技术大学.html">学校概况</a></li>
+                    <li><a href="">学校新闻</a></li>
+                </ul>
+            </li>
+            <li><a href="">华中科技大学</a>
+                <ul>
+                    <li><a href="华中科技大学.html">学校概况</a></li>
+                    <li><a href="">学校新闻</a></li>
+                </ul>
+            </li>
+            <li><a href="">武汉大学</a>
+                <ul>
+                    <li><a href="武汉大学.html">学校概况</a></li>
+                    <li><a href="">学校新闻</a></li>
+                </ul>
+            </li>
+            <li><a href="">西安交通大学</a>
+                <ul>
+                    <li><a href="西安交通大学.html">学校概况</a></li>
+                    <li><a href="">学校新闻</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <h2 style="font-size: 20px;color: aqua;width: 450px;"><b>北京大学学校概况:</b></h2>
+    <img src="img/bjun.jpg" th:src="@{../img/bjun.jpg}" alt="" height="350px" width="450px" draggable="true" >
+    <form action=""style="float: left">
+        <textarea name="" id="1" cols="30" rows="24" style="margin: 0 40px 0 40px;background: linear-gradient(#CD9CF2,#F6F3FF)">
+       历史名人：
+            孙家鼐  吴汝纶  张百熙  张亨嘉 林 纾 严 复 蔡元培 钟观光 葛利普 梁启超 俞同奎 章鸿钊 冯祖荀
+            陈 垣 马 衡 章士钊 鲁 迅 马寅初 何育杰 钱崇澍 马叙伦 刘师培 吴 梅 夏元瑮 萧友梅 熊十力 马文昭 任鸿隽 沈兼士 秉 志
+            黄 侃 蒋梦麟 丁文江 王星拱 陈大齐 钱玄同 陶孟和 李四光 杜国庠 翁文灏 刘仙洲 许德珩 陈寅恪 黎锦熙 王竹泉 刘半农
+            毕华德 胡 适 饶毓泰 唐 钺 刘半农 毕华德 胡 适 饶毓泰 唐 钺 汤用彤 范文澜 金宝善 顾颉刚 梁漱溟 潘梓年 戴芳澜 叶圣陶
+            沈寯淇 陈 桢 徐宝璜 薛 愚 冯友兰 刘天华 孙云铸 李汝祺 张景钺 林语堂 金岳霖 钱 穆 徐悲鸿 董作宾 嵇文甫 沈雁冰 傅斯年
+        </textarea>
+    </form>
+    <form action="" style="float: left">
+        <textarea name="" id="2" cols="30" rows="24" style="margin: 0 40px 0 40px;background: linear-gradient(#5FF20A,#4BEFEF)" >
+       历史名人：
+            石志仁 朱光潜 李继侗 杨石先 杨钟健 吴有训 陈翰笙 罗家伦 徐志摩 曹靖华 虞宏正 潘 菽 叶企孙 冯景兰
+            朱自清 郑振铎 黄鸣龙 谢家荣 翦伯赞 田奇镌 乐森璕 纪育沣 杨 晦 罗常培 郑天挺 俞建章 闻一多 诸福棠
+            曾昭抡 游国恩 王 力 向 达 吴朝仁 何作霖 陈岱孙 张肇骞 林振纲 侯德封 俞平伯 钱端升 黄子卿 毛燮均
+            刘崇乐 林巧稚 许 杰 胡传揆 钟惠澜 俞大绂 梁思成 斯行健 蔡方荫 臧玉洤 魏建功 尹赞勋 冯 定 朱物华
+            江泽涵 孙国华 沈从文 周培源 赵忠尧 梁实秋 傅 鹰 冯兰洲 汤佩松 林 镕 王叔咸 刘思职 黄汲清 裴文中
+            冯 至 江隆基 郑 昕 冼星海 袁翰青
+        </textarea>
+    </form>
+    <form action=""style="float: left">
+        <textarea name="" id="3" cols="30" rows="24" style="margin: 0 20px 0 20px;background: linear-gradient(#DFEC51,#73AA0A)">
+       历史名人：
+            冯 至 江隆基 郑 昕 冼星海 袁翰青 尹 达 余瑞璜 张大煜 孟昭英 涂长望 吴大猷 张香桐 周同庆 章名涛
+            李连捷 张青莲 顾功叙 殷宏章 丁声树 千家驹 吴学蔺 吴 晗 张文佑 赵以炳 傅承义 艾思奇 华罗庚 许宝騄
+            张文裕 王竹溪 季羡林 何其芳 钱伟长 张 维 葛庭燧 段学复 马大猷 王湘浩 张宗燧 唐敖庆 吴征镒 胡 宁
+            吴仲华 胡 绳 杨振宁 李政道
+       个人简介：
+            杨振宁
+           杨振宁（1922— ）安徽合肥人。
+            物理学家。外籍院士。
+            西南联合大学毕业。
+            1954年与R.L.密耳斯共同提出杨—密耳斯场理论，开辟了非阿贝尔规范场的新研究领域，为现代规范场理论奠定了基础。
+            1956年与李政道合作提出弱相互作用中宇称不守恒的假说，为此获1957年诺贝尔物理学奖。论著编为《杨振宁论文选集》。
+        </textarea>
+    </form>
+    <div style="height:333px;width:1335px;background:linear-gradient(#CD9CF2,#F6F3FF);float: left;margin:0 10px 0 10px">
+        <details style="width: 60%;height: 100%;float: left;" open>
+            <summary>学校简介:</summary>
+            北京大学创办于1898年，初名京师大学堂，是中国第一所国立综合性大学，也是当时中国最高教育行政机关。辛亥革命后，于1912年改为现名。
+            作为新文化运动的中心和“五四”运动的策源地，作为中国最早传播马克思主义和民主科学思想的发祥地，作为中国共产党最早的活动基地，
+            北京大学为民族的振兴和解放、国家的建设和发展、社会的文明和进步做出了不可替代的贡献，在中国走向现代化的进程中起到了重要的先锋作用。
+            <mark>爱国、进步、民主、科学的传统精神和勤奋、严谨、求实、创新的学风在这里生生不息、代代相传。</mark>
+            1917年，著名教育家蔡元培出任北京大学校长，他<strong>“循思想自由原则，取兼容并包主义”</strong>，对北京大学进行了卓有成效的改革，促进了思想解放和学术繁荣。
+            陈独秀、李大钊、毛泽东以及鲁迅、胡适等一批杰出人才都曾在北京大学任职或任教。
+            1937年卢沟桥事变后，北京大学与清华大学、南开大学南迁长沙，共同组成长沙临时大学。
+            不久，临时大学又迁到昆明，改称国立西南联合大学。抗日战争胜利后，北京大学于1946年10月在北平复学。
+            中华人民共和国成立后，全国高校于1952年进行院系调整，北京大学成为一所以文理基础教学和研究为主的综合性大学，为国家培养了大批人才。
+            据不完全统计，北京大学的校友和教师有400多位两院院士，中国人文社科界有影响的人士相当多也出自北京大学。
+            改革开放以来，北京大学进入了一个前所未有的大发展、大建设的新时期，并成为国家“211工程”重点建设的两所大学之一。
+            1998年5月4日，北京大学百年校庆之际，国家主席江泽民在庆祝北京大学建校一百周年大会上发表讲话，
+            发出了“为了实现现代化，我国要有若干所具有世界先进水平的一流大学”的号召。在国家的支持下，北京大学适时启动“创建世界一流大学计划”，从此，北京大学的历史翻开了新的一页。
+        </details>
+        <div style="height: 320px;width: 20%;;float: left;background:linear-gradient(#00ABEE,#F8F8BA);overflow: scroll;margin: 10px">
+            <h3 style="text-align: center">北京大学举办脑科学国际论坛</h3>
+            <h4 style="text-align: center">2021/11/11 信息来源： IDG麦戈文脑科学研究所</h4>—----<i></i><br>
+            值此北京大学IDG麦戈文脑科学研究所成立十周年之际，北京大学脑科学国际论坛于11月6至7日在邓祐才报告厅举行。
+            论坛结合线下主会场、线上线下报告、线上同步直播的方式举行，邀请来自美国哈佛大学、斯坦福大学、加州大学伯克利分校、英国伦敦大学学院、德国马普研究所、日本筑波大学等国外知名高校，
+            以及北京师范大学、中科院脑智卓越创新中心等国内兄弟单位和校内相关单位的26位知名学者跨越时空，共聚一堂。
+            他们中有耄耋之年的美国国家科学院院士，还有崭露头角的学术新秀，都以高昂的热情分享了他们在脑科学前沿研究的最新进展，
+            并与线上线下观众频繁互动，碰撞思想火花。近2万人次观看线上直播，共享这场顶尖的脑科学研究盛宴。
+        </div>
+        <ul type="none" style="margin:20px;">
+            <li style="margin: 25px;text-align: center;"><a href="https://www.pku.edu.cn/recruit.html" style="text-decoration: none;color: mediumslateblue;size: 20px"><b>招生</b></a></li>
+            <li style="margin: 25px;text-align: center;"><a href="https://www.pku.edu.cn/department.html" style="text-decoration: none;color: mediumslateblue;size: 20px"><b>学部与院系</b></a></li>
+            <li style="margin: 25px;text-align: center;"><a href="https://www.pku.edu.cn/education.html" style="text-decoration: none;color: mediumslateblue;size: 20px"><b>教育教学</b></a></li>
+            <li style="margin: 25px;text-align: center;"><a href="https://www.pku.edu.cn/scientificResearch.html" style="text-decoration: none;color: mediumslateblue;size: 20px"><b>科学研究</b></a></li>
+            <li style="margin: 25px;text-align: center;"><a href="https://www.pku.edu.cn/cooperation.html" style="text-decoration: none;color: mediumslateblue;size: 20px"><b>合作交流</b></a></li>
+            <li style="margin: 25px;text-align: center;"><a href="https://www.pku.edu.cn/campus.html" style="text-decoration: none;color: mediumslateblue;size: 20px"><b>校园生活</b></a></li>
+        </ul>
+
+    </div>
+</div>
+
+</body>
+</html>

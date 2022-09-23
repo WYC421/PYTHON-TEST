@@ -1,0 +1,21 @@
+server:
+  port: 6062
+
+spring:
+  datasource:
+    name: vote
+    url: jdbc:mysql://localhost:3306/vote
+
+    username: root
+    password: root
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+
+mybatis:
+  mapper-locations: classpath:com/mapper/*Mapper.xml
+  type-aliases-package: com.mapper
+
+
+
